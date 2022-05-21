@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Idade do pet</title>
+</head>
+<body>
+    <div class="general">
+        <div class="form">
+            <form class="form-pet" action="validate/idade_pet.php" method="post">
+                <div class="texto-form">
+                    <div class="titulo-form">Idade do pet</div>
+                    <div class="subtitulo-form">Descubra qual a idade do seu pet</div>
+                </div>
+
+                <div class="label-group">
+                    <label for="pet-type" class="label-simples">Selecione seu pet*</label>
+                    <select name="pet-type" id="pet-type" class="select-simples" required>
+                        <option value="select">Selecione</option>
+                        <option value="gato">Gato</option>
+                        <option value="cachorro">Cachorro</option>
+                    </select>
+                </div>
+
+                <div class="label-group">
+                    <label for="age" class="label-simples">Idade em anos humanos*</label>
+                    <input type="number" name="age" id="age" class="input-geral" size="15" maxlength="2" required>
+                </div>
+
+                <div class="btn-group">
+                    <input type="submit" value="Calcular" class="btn-form btn-send" name="calculate">
+                    <input type="reset" value="Limpar" class="btn-form btn-reset" name="reset">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
